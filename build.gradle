@@ -1,0 +1,68 @@
+apply plugin: 'application'
+
+mainClassName = "io.core9.core.boot.BootstrapFramework"
+
+repositories {
+	jcenter()
+	maven {
+		url "http://rendersnake.googlecode.com/svn/repo"
+	}
+}
+
+task wrapper(type: Wrapper) {
+	gradleVersion = '1.10'
+}
+
+dependencies {
+	// Core
+	compile 'io.core9:core:+'
+	
+	// Server
+	compile 'io.core9:module-server-api:+'
+	compile 'io.core9:module-server-vertx:+'
+
+	
+	// Template engine
+	compile 'io.core9:module-template-engine-closure:+'
+	
+	// Features
+	compile 'io.core9:module-features:+'
+	
+	// Git
+	compile 'io.core9:module-git:+'
+	
+	// Import
+	// compile 'io.core9:module-import:+'
+	
+	// Widgets
+	compile 'io.core9:module-widgets:+'
+	compile 'io.core9:module-widgets-toolkit:+'
+
+	// Database
+	compile 'io.core9:module-database-api:+'
+	compile 'io.core9:module-database-mongodb:+'
+		
+	// Static files handler
+	compile 'io.core9:module-static-handler:+'
+	
+	// Admin
+	compile 'io.core9:module-admin:+'
+	compile 'io.core9:module-admin-dashboard:+'
+	compile 'io.core9:module-files-manager:+'
+	
+	//Authentication
+	//compile 'io.core9:module-authentication-standard-api:+'
+	//compile 'io.core9:module-authentication-api:+'
+	compile 'io.core9:module-authentication-standard:+'
+	compile 'io.core9:module-authentication:+'
+	
+	//Javascript
+	//compile 'io.core9:module-nashorn:+'
+	
+	// Commerce
+	// compile 'io.core9:plugin-commerce-impl:+'
+
+	// Thumbnails
+	// compile 'io.core9:plugin-thumbnails-api:+'
+	// compile 'io.core9:plugin-thumbnails-impl:+'
+}
