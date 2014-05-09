@@ -1,6 +1,6 @@
 run ./gradlew --refresh-dependencies install
-cd build/install/Core9
-./bin/Core9
+cd build/install/core9-platform-master-stable
+./bin/core9-platform-master
 
 
 For windows use Cygwin to run the commands.
