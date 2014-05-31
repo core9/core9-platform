@@ -8,6 +8,14 @@ cd build/install/core9-platform-master-stable
 ./bin/core9-platform-master
 
 
+login on : http://localhost:8080/dashboard/login
+
+user : root
+pass : secret
+
+Please change user and password!
+
+
 For windows use Cygwin to run the commands.
 
 http://www.cygwin.com/install.html
