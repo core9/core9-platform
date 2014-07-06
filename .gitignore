@@ -1,3 +1,5 @@
 .settings
 .gradle
 /build
+/data/git/*
+jspf.cache
