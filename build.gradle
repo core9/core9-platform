@@ -26,19 +26,23 @@ dependencies {
   //Javascript
   //compile 'io.core9:module-nashorn:+'
   
-  
+ 
   // Authentication
   compile 'io.core9:module-authentication:+'
   compile 'io.core9:module-authentication-standard:+'
   
   // Template engine
   compile 'io.core9:module-template-engine-closure:+'
-  
+
+
+    
   // Features
   compile 'io.core9:module-features:+'
-  
+ 
   // Git
   compile 'io.core9:module-git:+'
+  
+
   
   // Import
   compile 'io.core9:module-import:+'
@@ -55,8 +59,12 @@ dependencies {
   // Admin
   compile 'io.core9:module-admin:+'
   compile 'io.core9:module-admin-dashboard:+'
+
+  
   compile 'io.core9:module-files-manager:+'
 
+
+  
   // Thumbnails
   compile 'io.core9:module-thumbnails:+'
 
