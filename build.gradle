@@ -18,8 +18,8 @@ dependencies {
   // Server
   compile 'io.core9:module-hostmanager:+'
   compile 'io.core9:module-server:+'
-  //compile 'io.core9:module-server-undertow:+'
-  compile 'io.core9:module-server-vertx:+'
+  compile 'io.core9:module-server-undertow:+'
+  //compile 'io.core9:module-server-vertx:+'
   
   //compile 'io.core9:module-rest-api:+'
 	
