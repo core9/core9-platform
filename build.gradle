@@ -21,7 +21,7 @@ dependencies {
   compile 'io.core9:module-server-undertow:+'
   //compile 'io.core9:module-server-vertx:+'
   
-  //compile 'io.core9:module-rest-api:+'
+  compile 'io.core9:module-rest-api:+'
 	
   //Javascript
   //compile 'io.core9:module-nashorn:+'
