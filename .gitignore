@@ -1,4 +1,5 @@
 .settings
+.settings/*
 .gradle
 /build
 /data/git/*
