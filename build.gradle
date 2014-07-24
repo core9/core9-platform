@@ -11,6 +11,12 @@ task wrapper(type: Wrapper) {
   gradleVersion = '1.12'
 }
 
+repositories {
+	flatDir {
+		dirs 'libs'
+	}
+ }
+
 dependencies {
   // Core
   compile 'io.core9:core:+'
@@ -45,7 +51,7 @@ dependencies {
 
   
   // Import
-  compile 'io.core9:module-import:+'
+  // compile 'io.core9:module-import:+'
   compile 'io.core9:module-task-manager:+'
   
   // Widgets
@@ -69,6 +75,6 @@ dependencies {
   compile 'io.core9:module-thumbnails:+'
 
   // Commerce
-  compile 'io.core9:module-commerce:+' 
-  compile 'io.core9:module-ogone:+'
+  // compile 'io.core9:module-commerce:+' 
+  // compile 'io.core9:module-ogone:+'
 }
