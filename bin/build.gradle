@@ -1,0 +1,80 @@
+// $ ./gradlew --refresh-dependencies clean installApp
+apply plugin: 'application'
+
+mainClassName = "io.core9.core.boot.BootstrapFramework"
+
+repositories {
+  jcenter()
+}
+
+task wrapper(type: Wrapper) {
+  gradleVersion = '1.12'
+}
+
+repositories {
+	flatDir {
+		dirs 'libs'
+	}
+ }
+
+dependencies {
+  // Core
+  compile 'io.core9:core:+'
+  
+  // Server
+  compile 'io.core9:module-hostmanager:+'
+  compile 'io.core9:module-server:+'
+  compile 'io.core9:module-server-undertow:+'
+  //compile 'io.core9:module-server-vertx:+'
+  
+  compile 'io.core9:module-rest-api:+'
+	
+  //Javascript
+  //compile 'io.core9:module-nashorn:+'
+  
+ 
+  // Authentication
+  compile 'io.core9:module-authentication:+'
+  compile 'io.core9:module-authentication-standard:+'
+  
+  // Template engine
+  compile 'io.core9:module-template-engine-closure:+'
+
+
+    
+  // Features
+  compile 'io.core9:module-features:+'
+ 
+  // Git
+  compile 'io.core9:module-git:+'
+  
+
+  
+  // Import
+  // compile 'io.core9:module-import:+'
+  compile 'io.core9:module-task-manager:+'
+  
+  // Widgets
+  compile 'io.core9:module-widgets:+'
+  compile 'io.core9:module-widgets-toolkit:+'
+
+  // Database
+  compile 'io.core9:module-database:+'
+  compile 'io.core9:module-database-mongodb:+'
+  
+  // Admin
+  compile 'io.core9:module-admin:+'
+  compile 'io.core9:module-admin-dashboard:+'
+
+  
+  compile 'io.core9:module-files-manager:+'
+
+
+  
+  // Thumbnails
+  compile 'io.core9:module-thumbnails:+'
+
+  // Commerce
+  // compile 'io.core9:module-commerce:+' 
+  // compile 'io.core9:module-ogone:+'
+}

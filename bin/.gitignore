@@ -1,0 +1,8 @@
+.settings
+.settings/org.eclipse.jdt.core.prefs
+.gradle
+.classpath
+/build
+/data/git/*
+jspf.cache
+/data/

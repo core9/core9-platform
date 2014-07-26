@@ -1,0 +1,26 @@
+
+Core9-platform now needs at least a 2.6 mongodb version.
+
+
+chmod 755 gradlew
+./gradlew --refresh-dependencies install
+cd build/install/core9-platform-master-stable
+./bin/core9-platform-master
+
+
+login on : http://localhost:8080/dashboard/login
+
+user : root
+pass : secret
+
+Please change user and password!
+
+
+For windows use Cygwin to run the commands.
+
+http://www.cygwin.com/install.html
+
+
+If you have unresolved dependencies go to this page : https://bintray.com/core9/core9
+
+and change the + in the build.gradle with the latest version number of the module that is causing problems.
